@@ -848,7 +848,7 @@
                  <item>
                   <widget class="QLabel" name="labelCustomPerKilobyte">
                    <property name="toolTip">
-                    <string>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                    <string>For the transaction fee, you can specify the exact number of "satoshis per kilobyte (1,000 bytes)."  For transactions larger than 1 kilobyte, the fee will be calculated on a per-kilobyte basis.  For transactions smaller than 1 kilobyte, the fee will be apportioned according to the size of the transaction (e.g., for a transaction that is 500 bytes {half of 1 kilobyte}, a fee of 0.00000010 would therefore be reduced to 0.00000005).</string>
                    </property>
                    <property name="text">
                     <string>per kilobyte</string>
